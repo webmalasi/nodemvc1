@@ -3,6 +3,7 @@ const app= express();
 app.use(express.json());
 
 const PORT =3009;
+require("dotenv").config();
 
 const usersroutes = require("./app/routes/api");
 app.use("/api",usersroutes);
